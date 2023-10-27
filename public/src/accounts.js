@@ -2,8 +2,8 @@ function findAccountById(accounts, id) {
   return accounts.find((account) => account.id === id);
 }
 
-function sortAccountsByLastName(accounts){
-  return accounts.sort((accountA, accountB) => accountA.name > accountB.name ? 1: -1);
+function sortAccountsByLastName(accounts) {
+  return accounts.sort((acctA, acctB) => acctA.name.last > acctB.name.last ? 1: -1);
 }
 
 function getAccountFullNames(accounts){
