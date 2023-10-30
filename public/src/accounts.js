@@ -7,7 +7,7 @@ function sortAccountsByLastName(accounts) {
 }
 
 function getAccountFullNames(accounts){
-  return accounts.map((name) => `${accounts.name}`);
+  return accounts.map((account) => `${account.name.first} ${account.name.last}`);
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
